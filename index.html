@@ -193,6 +193,44 @@
         body.light-theme .contact-item a {
             color: #1a73e8;
         }
+        .faq-item {
+            margin-bottom: 10px;
+        }
+        .faq-item input {
+            display: none;
+        }
+        .faq-item label {
+            display: block;
+            background: #36393f;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        body.light-theme .faq-item label {
+            background: #f5f5f5;
+        }
+        .faq-item label:hover {
+            background: #4a4e57;
+        }
+        body.light-theme .faq-item label:hover {
+            background: #e0e0e0;
+        }
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background: rgba(44, 62, 80, 0.8);
+            border-radius: 8px;
+            margin-top: 5px;
+            transition: background 0.3s;
+        }
+        body.light-theme .faq-answer {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .faq-item input:checked ~ .faq-answer {
+            display: block;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -223,6 +261,7 @@
             <a href="#support">Поддержать</a>
             <a href="#about">Обо мне</a>
             <a href="#contacts">Контакты</a>
+            <a href="#faq">FAQ</a>
         </nav>
         <div class="language-toggle">
             <select onchange="showLanguage(this.value)">
@@ -276,6 +315,27 @@
             </div>
         </div>
 
+        <div class="section" id="faq">
+            <div class="content">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1-ru">
+                    <label for="faq1-ru">Где можно скачать ваши моды?</label>
+                    <div class="faq-answer">Мои моды доступны на Steam Workshop и Boosty!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2-ru">
+                    <label for="faq2-ru">Как можно получить ваши новые моды?</label>
+                    <div class="faq-answer">Мои новые моды можно получить на Boosty, купив пост с модом, или написать мне в Telegram или Discord насчет покупки мода!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3-ru">
+                    <label for="faq3-ru">На какую тематику вы делаете моды для Garry's Mod?</label>
+                    <div class="faq-answer">Я делаю моды по Skibidi Toilet и Italian Animals Brainrot для Garry's Mod!</div>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <p>© 2025 Hypno. Все права защищены.</p>
         </footer>
@@ -318,6 +378,27 @@
             </div>
         </div>
 
+        <div class="section" id="faq">
+            <div class="content">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1-en">
+                    <label for="faq1-en">Where can I download your mods?</label>
+                    <div class="faq-answer">My mods are available on Steam Workshop and Boosty!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2-en">
+                    <label for="faq2-en">How can I get your new mods?</label>
+                    <div class="faq-answer">You can get my new mods on Boosty by purchasing a mod post, or contact me via Telegram or Discord to buy a mod!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3-en">
+                    <label for="faq3-en">What themes do you make mods for in Garry's Mod?</label>
+                    <div class="faq-answer">I make mods based on Skibidi Toilet and Italian Animals Brainrot for Garry's Mod!</div>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <p>© 2025 Hypno. All rights reserved.</p>
         </footer>
@@ -327,16 +408,16 @@
         <div class="section" id="support">
             <div class="image-frame"></div>
             <div class="content">
-                <h1>Hypno</h1>
-                <p>Прывітанне! Я Hypno, стваральнік крутых модаў для Garry's Mod і энтузіяст тэхналогій. Мае праекты дадаюць у гульню унікальныя прыгоды і персанажаў. Падтрымай маю творчасць на Boosty і далучайся да суполкі!</p>
+                <h1>Hypno</h2>
+                <p>Прывітанне! Я Hypno, стваральнік крутых модаў для Garry's Mod і энтузіаст тэхналогій. Мае праекты дадаюць у гульню унікальныя прыгоды і персанажаў Падтрымай маю творчасць на Boosty і далучайся да суполкі!</p>
                 <a href="https://boosty.to/garrsis_man_official" target="_blank" class="button">Падтрымаць на Boosty</a>
             </div>
         </div>
 
         <div class="section" id="about">
             <div class="content">
-                <h2>Пра мяне</h2>
-                <p>Я Hypno, захоплены распрацоўшчык і аматар крэатыўных праектаў. Акрамя мадыфікацыі для Garry's Mod, я захапляюся праграмаваннем, гульнямі і стварэннем кантэнту. Мая мэта — натхняць іншых і дзяліцца сваімі ідэямі. Далучайся да майго шляху!</p>
+                <h2>Пра мяне</h3>
+                <p>Я Hypno, захоплены распрацоўшчык і аматар крэатыўных праектаў Акрамя мадыфікацыі для Garry's Mod, я захапляюся праграмаваннем, гульнямі і стварэннем кантэнту. Мая мэта — натхняць іншых і дзяліцца сваімі ідэямі. Далучайся да майго шляху!</p>
             </div>
         </div>
 
@@ -360,6 +441,27 @@
             </div>
         </div>
 
+        <div class="section" id="faq">
+            <div class="content">
+                <h2>Часта задаваныя пытанні</h2>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1-be">
+                    <label for="faq1-be">Дзе можна спампаваць вашы моды?</label>
+                    <div class="faq-answer">Мае моды даступныя на Steam Workshop і Boosty!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2-be">
+                    <label for="faq2-be">Як можна атрымаць вашы новыя моды?</label>
+                    <div class="faq-answer">Мае новыя моды можна атрымаць на Boosty, купіўшы пост з модам, або напісаць мне ў Telegram ці Discord адносна куплі мода!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3-be">
+                    <label for="faq3-be">На якую тэматыку вы робіце моды для Garry's Mod?</label>
+                    <div class="faq-answer">Я роблю моды па Skibidi Toilet і Italian Animals Brainrot для Garry's Mod!</div>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <p>© 2025 Hypno. Усе правы абаронены.</p>
         </footer>
@@ -378,7 +480,7 @@
         <div class="section" id="about">
             <div class="content">
                 <h2>Про мене</h2>
-                <p>Я Hypno, пристрасний розробник і любитель креangelo проєктів. Окрім моддінгу для Garry's Mod, я захоплююся програмуванням, іграми та створенням контенту. Моя мета — надихати інших і ділитися своїми ідеями. Приєднуйся до моєї подорожі!</p>
+                <p>Я Hypno, пристрасний розробник і любитель креативних проєктів. Окрім моддінгу для Garry's Mod, я захоплююся програмуванням, іграми та створенням контенту. Моя мета — надихати інших і ділитися своїми ідеями. Приєднуйся до моєї подорожі!</p>
             </div>
         </div>
 
@@ -398,6 +500,27 @@
                         <strong>Discord:</strong>
                         <a href="https://discord.com/users/hypno_sell" target="_blank">Hypno_Sell</a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="faq">
+            <div class="content">
+                <h2>Поширені запитання</h2>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1-uk">
+                    <label for="faq1-uk">Де можна завантажити ваші моди?</label>
+                    <div class="faq-answer">Мої моди доступні на Steam Workshop та Boosty!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2-uk">
+                    <label for="faq2-uk">Як отримати ваші нові моди?</label>
+                    <div class="faq-answer">Мої нові моди можна отримати на Boosty, купивши пост із модом, або написати мені в Telegram чи Discord щодо купівлі мода!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3-uk">
+                    <label for="faq3-uk">На яку тематику ви створюєте моди для Garry's Mod?</label>
+                    <div class="faq-answer">Я створюю моди на теми Skibidi Toilet та Italian Animals Brainrot для Garry's Mod!</div>
                 </div>
             </div>
         </div>
@@ -444,6 +567,27 @@
             </div>
         </div>
 
+        <div class="section" id="faq">
+            <div class="content">
+                <h2>Questions fréquentes</h2>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1-fr">
+                    <label for="faq1-fr">Où puis-je télécharger vos mods ?</label>
+                    <div class="faq-answer">Mes mods sont disponibles sur Steam Workshop et Boosty !</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2-fr">
+                    <label for="faq2-fr">Comment obtenir vos nouveaux mods ?</label>
+                    <div class="faq-answer">Vous pouvez obtenir mes nouveaux mods sur Boosty en achetant un post de mod, ou me contacter via Telegram ou Discord pour acheter un mod !</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3-fr">
+                    <label for="faq3-fr">Sur quels thèmes faites-vous des mods pour Garry's Mod ?</label>
+                    <div class="faq-answer">Je crée des mods sur les thèmes Skibidi Toilet et Italian Animals Brainrot pour Garry's Mod !</div>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <p>© 2025 Hypno. Tous droits réservés.</p>
         </footer>
@@ -482,6 +626,27 @@
                         <strong>Discord:</strong>
                         <a href="https://discord.com/users/hypno_sell" target="_blank">Hypno_Sell</a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="faq">
+            <div class="content">
+                <h2>Preguntas frecuentes</h2>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq1-es">
+                    <label for="faq1-es">¿Dónde puedo descargar tus mods?</label>
+                    <div class="faq-answer">¡Mis mods están disponibles en Steam Workshop y Boosty!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq2-es">
+                    <label for="faq2-es">¿Cómo puedo obtener tus nuevos mods?</label>
+                    <div class="faq-answer">Puedes obtener mis nuevos mods en Boosty comprando un post de mod, o contactarme por Telegram o Discord para comprar un mod!</div>
+                </div>
+                <div class="faq-item">
+                    <input type="checkbox" id="faq3-es">
+                    <label for="faq3-es">¿Sobre qué temas haces mods para Garry's Mod?</label>
+                    <div class="faq-answer">¡Hago mods sobre Skibidi Toilet e Italian Animals Brainrot para Garry's Mod!</div>
                 </div>
             </div>
         </div>
